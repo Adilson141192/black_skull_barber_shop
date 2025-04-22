@@ -68,11 +68,11 @@ function agendar() {
         Horário: ${hora}
         Telefone: ${telefone}
   
-        Aguardo sua confirmação.
+        Aguardo sua confirmação, Will.
     `);
   
     // Substitua o número abaixo pelo número de WhatsApp da barbearia
-    const numeroWhatsApp = "5598996215367"; // Exemplo: "55" para Brasil + número
+    const numeroWhatsApp = "5598981956304"; // Exemplo: "55" para Brasil + número
     const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemWhatsApp}`;
   
     // Redirecionar para o WhatsApp
