@@ -1,18 +1,46 @@
-select {
-    padding: 10px;
-    font-size: 16px;
-    width: 250px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+:root {
+    --primary: white;
+    --secondary: black;
 }
 
 ul {
     list-style: none;
     padding: 0;
-  }
-  li {
+}
+
+li {
     background: #f1f1f1;
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 8px;
-  }
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 250px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#resumo {
+    margin-top: 20px;
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}

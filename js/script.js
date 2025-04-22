@@ -8,11 +8,58 @@ const servicosBarbearia = [
     { nome: "Pigmentação de Barba", preco: 35.00 }
   ];
   
-  const select = document.getElementById('servicos-select');
+const select = document.getElementById('servicos-select');
   
-  servicosBarbearia.forEach((servico, index) => {
+servicosBarbearia.forEach((servico, index) => {
     const option = document.createElement('option');
     option.value = index;
     option.textContent = `${servico.nome} - R$ ${servico.preco.toFixed(2)}`;
     select.appendChild(option);
-  });
+});
+
+function agendar() {
+    const index = select.value;
+    const data = document.getElementById('data').value;
+    const hora = document.getElementById('hora').value;
+    const nome = document.getElementById('nome').value;
+    const telefone = document.getElementById('telefone').value;
+  
+    if (index === "" || data === "" || hora === "" || nome === "" || telefone === "") {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
+  
+    const servico = servicosBarbearia[index];
+    const resumo = document.getElementById('resumo');
+    resumo.innerHTML = `
+        <strong>Agendamento confirmado!</strong><br><br>
+        Serviço: ${servico.nome}<br>
+        Data: ${data}<br>
+        Horário: ${hora}<br>
+        Cliente: ${nome}<br>
+        Telefone: ${telefone}<br>
+        Preço: R$ ${servico.preco.toFixed(2)}
+    `;
+    resumo.style.display = 'block';
+  
+    // Gerar mensagem para o WhatsApp
+    const mensagemWhatsApp = encodeURIComponent(`
+        *Novo Agendamento* 🗓️
+  
+        Serviço: ${servico.nome}
+        Data: ${data}
+        Horário: ${hora}
+        Cliente: ${nome}
+        Telefone: ${telefone}
+        Preço: R$ ${servico.preco.toFixed(2)}
+  
+        Aguardo sua confirmação.
+    `);
+  
+    // Substitua o número abaixo pelo número de WhatsApp da barbearia
+    const numeroWhatsApp = "55xxxxxxxxxxx"; // Exemplo: "55" para Brasil + número
+    const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemWhatsApp}`;
+  
+    // Redirecionar para o WhatsApp
+    window.open(linkWhatsApp, '_blank');
+  }
