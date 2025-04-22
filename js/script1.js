@@ -1,11 +1,26 @@
 const servicosBarbearia = [
-    { nome: "Corte Masculino", preco: 40.00 },
-    { nome: "Barba Completa", preco: 30.00 },
-    { nome: "Corte + Barba", preco: 65.00 },
-    { nome: "Sobrancelha", preco: 15.00 },
-    { nome: "Corte Infantil", preco: 35.00 },
-    { nome: "Hidratação Capilar", preco: 25.00 },
-    { nome: "Pigmentação de Barba", preco: 35.00 }
+    { nome: "Alinhamento Americano", preco: 40.00 },
+    { nome: "Barba Completa", preco: 25.00 },
+    { nome: "Barbaterapia", preco: 40.00 },
+    { nome: "Barba + Pezinho", preco: 25.00 },
+    { nome: "Barba + Pigmentação", preco: 40.00 },
+    { nome: "Corte Degradê", preco: 25.00 },
+    { nome: "Corte Infantil", preco: 25.00 },
+    { nome: "Corte Social", preco: 20.00 },
+    { nome: "Corte Pezinho", preco: 10.00 },
+    { nome: "Corte + Alinhamento Americano", preco: 60.00 },
+    { nome: "Corte + Barba", preco: 45.00 },
+    { nome: "Corte + Desenhos", preco: 30.00 }, 
+    { nome: "Corte + Lavagem", preco: 30.00 },
+    { nome: "Corte + Luzes", preco: 80.00 },
+    { nome: "Corte + Nevou", preco: 110.00 },
+    { nome: "Corte + Pigmentação", preco: 40.00 },
+    { nome: "Corte + Platinado", preco: 100.00 },
+    { nome: "Corte + Reflexos", preco: 90.00 },
+    { nome: "Lavagem", preco: 10.00 },
+    { nome: "Limpeza Facial", preco: 20.00 },
+    { nome: "Pigmentação", preco: 20.00 },
+    { nome: "Sobrancelha", preco: 10.00 },
   ];
   
 const select = document.getElementById('servicos-select');
