@@ -3,6 +3,12 @@
     --secondary: black;
 }
 
+div {
+    display: flex;
+    display: grid;
+    justify-content: center;
+}
+
 ul {
     list-style: none;
     padding: 0;
