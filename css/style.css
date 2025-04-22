@@ -3,7 +3,9 @@
     --secondary: black;
 }
 
-
+header a {
+    text-decoration: none;
+}
 
 header p {
     font-size: 45px;
@@ -25,6 +27,7 @@ header p {
 
 body {
     background-color: var(--secondary);
+    font-family: 'Edo', sans-serif;
 }
 
 body h2, h3 {
@@ -35,38 +38,17 @@ body h2, h3 {
 }
 
 body a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+body p {
     text-decoration: none;
     color: var(--primary);
 }
 
-body a:hover {
-    transition: 0.2s;
-}
-
 #logoImg {
     width: 20px;
-}
-
-.promo {
-    font-size: 25px;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-    background: none;
-    color: var(--primary);
-    margin: 30px;
-    padding: 6px 12px;
-    border-radius: 20px;
-    border: 2px solid var(--secondary);
-    box-shadow: 1px 1px 15px 3px rgba(255, 255, 255, 0.6);
-}
-
-.promo:hover {
-    font-weight: bolder;
-    font-size: 35px;
-    border: var(--primary);
-    background: var(--secondary);
-    transition: 0.8s;
 }
 
 .itens {
@@ -82,12 +64,11 @@ body a:hover {
     box-shadow: 1px 1px 15px 3px rgba(255, 255, 255, 0.6);
 }
 
-.itens:hover {
-    font-weight: bolder;
-    font-size: 35px;
-    border: var(--primary);
-    background: var(--secondary);
-    transition: 0.8s;
+.barberImg {
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0px;
 }
 
 footer {
