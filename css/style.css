@@ -26,6 +26,7 @@ header p {
 }
 
 body {
+    color: var(--primary);
     background-color: var(--secondary);
     font-family: 'Edo', sans-serif;
 }
@@ -103,3 +104,4 @@ footer p {
     text-align: center;
     font-size: 14px;
 }
+
