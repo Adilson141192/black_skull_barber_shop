@@ -1,0 +1,106 @@
+:root {
+    --primary: white;
+    --secondary: black;
+}
+
+
+
+header p {
+    font-size: 45px;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+#logo {
+    display: block;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+body {
+    background-color: var(--secondary);
+}
+
+body h2, h3 {
+    text-align: center;
+    color: var(--primary);
+    padding: 10px;
+    margin: 10px;
+}
+
+body a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+body a:hover {
+    transition: 0.2s;
+}
+
+#logoImg {
+    width: 20px;
+}
+
+.promo {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    background: none;
+    color: var(--primary);
+    margin: 30px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 2px solid var(--secondary);
+    box-shadow: 1px 1px 15px 3px rgba(255, 255, 255, 0.6);
+}
+
+.promo:hover {
+    font-weight: bolder;
+    font-size: 35px;
+    border: var(--primary);
+    background: var(--secondary);
+    transition: 0.8s;
+}
+
+.itens {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background: none;
+    color: var(--primary);
+    margin: 20px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 2px solid var(--secondary);
+    box-shadow: 1px 1px 15px 3px rgba(255, 255, 255, 0.6);
+}
+
+.itens:hover {
+    font-weight: bolder;
+    font-size: 35px;
+    border: var(--primary);
+    background: var(--secondary);
+    transition: 0.8s;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 15px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
